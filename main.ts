@@ -1,12 +1,11 @@
-let num3: Image = null
 let num1 = 0
 let num2 = 0
 input.onButtonPressed(Button.A, function () {
-    num3 = images.createImage(`
+    basic.showLeds(`
         # # # # #
         # # . # #
-        # . # . #
-        # # . # #
+        # # # # #
+        # . . # .
         # # # # #
         `)
 })
@@ -15,7 +14,7 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
-    num1 += 40 * 2
+    num1 += 1 + 1
     basic.showNumber(num1)
 })
 input.onGesture(Gesture.Shake, function () {
